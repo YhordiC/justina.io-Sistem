@@ -6,6 +6,7 @@ import './index.css'
 import HomeAdmin from './pages/Admin/HomeAdmin.jsx'
 import HomePaciente from './pages/Paciente/HomePaciente.jsx'
 import HomeMedico from './pages/Medico/HomeMedico.jsx'
+import PerfilAdmin from './pages/Admin/PerfilAdmin.jsx'
 
 
 const router = createBrowserRouter([
@@ -19,7 +20,13 @@ const router = createBrowserRouter([
   },
   {
     path: '/admin',
-    element: <HomeAdmin/>
+    element: <HomeAdmin />,
+    children:[
+      {
+        path: 'perfil',
+        element: <PerfilAdmin/>
+      }
+    ]
   },
 
   {

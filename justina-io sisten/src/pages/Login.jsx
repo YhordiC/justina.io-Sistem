@@ -62,7 +62,7 @@ function EnviarPage(Rol){
        
     }
   return (
-    <div className='w-full max-w-md m-auto bg-blue-500 p-10 rounded-lg  shadow-slate-50/10 shadow-lg'>
+    <div className='w-full  max-w-md m-auto bg-blue-500 p-10 rounded-lg  shadow-slate-50/10 shadow-lg'>
         <h5 className='text-3xl font-bold mb-8'>Login de Justina</h5>
         <form onSubmit={handleSubmit} className='flex flex-col gap-3'>
             <Input label="Correo" type="text" placeholder="Escribe tu correo" Name="email"/>
