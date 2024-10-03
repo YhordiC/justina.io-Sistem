@@ -9,11 +9,14 @@ export default function Login() {
 function EnviarPage(Rol){  
     if(Rol == "ADMIN"){
       navigate('/admin')
+      return
    }
    if( Rol == 'DOCTOR'){
     navigate('/medico')
+    return
    }
    navigate('/paciente')
+   return
   }
 
   
