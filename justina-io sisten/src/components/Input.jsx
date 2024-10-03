@@ -8,7 +8,7 @@ export default function Input({label, type, placeholder, Name} = obj)  {
   return (
     <>
     <label className="text-start">{label}</label>
-    <input className="p-3 rounded-md " type={type} placeholder={placeholder} name={Name}/>
+    <input className="p-3 rounded-md bg-blue-200" type={type} placeholder={placeholder} name={Name}/>
     </>
   )
 }
