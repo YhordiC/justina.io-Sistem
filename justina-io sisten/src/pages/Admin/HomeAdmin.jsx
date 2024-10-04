@@ -9,6 +9,12 @@ export default function HomeAdmin() {
         <li>
           <NavLink to={'/admin/perfil'} >Perfil</NavLink>
         </li>
+        <li>
+          <NavLink to={'/admin/medicos'} >Lista de medicos</NavLink>
+        </li>
+        <li>
+        <NavLink to={'/admin/pacientes'} >Lista de pacientes</NavLink>
+        </li>
       </ul>
     </header>
     <main id="detail" className= 'main-admin'>

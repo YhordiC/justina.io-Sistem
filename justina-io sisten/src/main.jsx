@@ -7,6 +7,7 @@ import HomeAdmin from './pages/Admin/HomeAdmin.jsx'
 import HomePaciente from './pages/Paciente/HomePaciente.jsx'
 import HomeMedico from './pages/Medico/HomeMedico.jsx'
 import PerfilAdmin from './pages/Admin/PerfilAdmin.jsx'
+import TablaMedico from './pages/Admin/TablaMedico.jsx'
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: 'perfil',
         element: <PerfilAdmin/>
+      },
+      {
+        path: 'medicos',
+        element: <TablaMedico/>
       }
     ]
   },
