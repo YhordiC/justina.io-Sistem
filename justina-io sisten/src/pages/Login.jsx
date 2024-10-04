@@ -44,9 +44,9 @@ function EnviarPage(Rol){
                })
                .then(data => {
                  const token =  decodeToken(data.jwtToken)
-                 sessionStorage.setItem('token', token)
-                 console.log(token.role)
-                 EnviarPage(token.role)
+               const stoken =  sessionStorage.setItem('token', data.jwtToken)
+                 console.log(token)
+                EnviarPage(token.role)
                })
                
            }
