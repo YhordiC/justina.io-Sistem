@@ -83,15 +83,15 @@ function EnviarPage(Rol){
      >
         <h5 className='text-3xl font-bold mb-8'>Login de Justina</h5>
         <form onSubmit={handleSubmit} className='flex flex-col gap-3'>
-            <Input label="Correo" type="text" placeholder="Escribe tu correo" Name="email"/>
-            <Input label="Contraseña" type="password" placeholder="Escribe tu contraseña" Name="password"/>
+            <Input label="Correo" type="text" placeholder="Escribe tu correo" Name="email" className='flex flex-col gap-2'/>
+            <Input label="Contraseña" type="password" placeholder="Escribe tu contraseña" Name="password" className='flex flex-col gap-2'/>
             <button className='bg-black p-4 rounded-md hover:bg-slate-900 ' type="submit">Entrar</button>
         </form>
        
     </div>
      {loadin ?
       <div className='absolute  top-0 right-0 w-full h-full flex justify-center items-center gap-2 '>
-        Por valor
+        Por favor
         <Cargando w={40} h={40} color={'white'} Estilos={'animate-spin'}/>espere 
         </div> : ''}
       { error ?<Mensaje estado={error}>

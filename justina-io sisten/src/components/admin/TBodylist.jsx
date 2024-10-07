@@ -8,9 +8,9 @@ export default function TBodylist({lista = [],}) {
                  <td>{lista.lastName}</td>
                  <td>{lista.email}</td>
                  <td>{lista.estado ? 'Activo' : 'Desactivado'}</td>
-                 <td>{lista.specialities}</td>
-                 <td className="cursor-pointer">
-                    <button onClick={() => setOpenMesaje(true)}>:</button>
+                 <td>{lista.phone}</td>
+                 <td>
+                    <button onClick={() => setOpenMesaje(true)} className="w-full h-full cursor-pointer">:</button>
                  </td>
                  <td className={'right-0  top-0 absolute bg-white flex flex-col  pt-8'} 
                  style={{

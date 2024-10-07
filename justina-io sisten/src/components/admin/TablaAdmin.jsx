@@ -12,7 +12,7 @@ export default function TablaAdmin({lista=[]}) {
                 <th>Apellido</th>
                 <th>Email</th>
                 <th>Estado de cuenta</th>
-                <th>Especialidades</th>
+                <th>Numero Telefónico</th>
                 <th></th>
                 </tr>
             </thead>

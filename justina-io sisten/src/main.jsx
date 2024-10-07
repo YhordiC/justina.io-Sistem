@@ -8,6 +8,7 @@ import HomePaciente from './pages/Paciente/HomePaciente.jsx'
 import HomeMedico from './pages/Medico/HomeMedico.jsx'
 import PerfilAdmin from './pages/Admin/PerfilAdmin.jsx'
 import TablaMedico from './pages/Admin/TablaMedico.jsx'
+import TablePaciente from './pages/Admin/TablePaciente.jsx'
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: 'medicos',
         element: <TablaMedico/>
+      },
+      {
+        path: 'pacientes',
+        element: <TablePaciente/>
       }
     ]
   },
