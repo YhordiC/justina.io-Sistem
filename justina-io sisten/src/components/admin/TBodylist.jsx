@@ -1,11 +1,11 @@
 import { useState } from "react";
 import DesactivarP from "./DesactivarP";
-
+import VerPerfil from "./VerPerfil";
 // eslint-disable-next-line react/prop-types
 export default function TBodylist({lista = [],}) {
   let type = lista.specialities ? 'medico' : 'paciente';
     const [openMesaje, setOpenMesaje] = useState(false)
-    
+    const [openPerfil, setOpenPerfil] = useState(false)
   return (<>
                <tr className="relative" >
                  <td>{lista.firstName}</td>
@@ -26,8 +26,12 @@ export default function TBodylist({lista = [],}) {
                  <img src="/closeIcon.png" alt="icono de cerrar" className="w-6 h-6" />
                  </button>
                   <DesactivarP idPaciente={lista.id} />
-                   <button className="background-blue-500 bg-green-600 px-4 text-white">Ver perfil</button>
-                   <div className=" transition-all absolute translate-x-[-97%] translate-y-[50%] bg-white w-[50vw] ">
+                   <button  onClick={() => setOpenPerfil(!openPerfil)}
+                    className="background-blue-500 bg-green-600 px-4 text-white">Ver perfil</button>
+                   <div className={` rounded-md inset-0 transition-all fixed left-0 top-0 bg-blue-950
+                      w-full h-min max-w-[500px] m-auto flex justify-center items-center 
+                      ${openPerfil ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
+                   <VerPerfil type={type} profile={lista} />
                     </div>
                  </td>
 
