@@ -9,7 +9,7 @@ export default function RegistroMedicopage() {
     <>
       <Button onClick = {eventoRegistro}>Registro medico</Button>
       
-      <div className={`${isRegister ? 'bg-black scale-100 opacity-100' :  ' scale-50 opacity-0'}
+      <div className={`${isRegister ? 'bg-black scale-100 opacity-100' :  ' scale-0 opacity-0'}
        w-full relative h-auto flex items-center justify-center  transition-all rounded-md z-10`}>
         <RegistroMedico/>
         </div> 

@@ -4,8 +4,8 @@ import TBodylist from "./TBodylist";
 // eslint-disable-next-line react/prop-types
 export default function TablaAdmin({lista=[]}) {
   return (
-    <div className="p-5">
-        <table className="bg-white text-black  w-full max-w-[1000px] mx-auto table-auto py-5">
+    <div className="p-5 max-md:overflow-x-auto max-md:px-0 max-md:pb-0">
+        <table className="  bg-white text-black  w-full max-w-[1000px] mx-auto border-separate ">
             <thead className="bg-blue-300 text-white ">
                 <tr>
                 <th>Nombre</th>

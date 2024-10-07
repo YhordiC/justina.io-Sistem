@@ -13,7 +13,7 @@ export default function Login() {
 
 function EnviarPage(Rol){  
     if(Rol == "ADMIN"){
-      navigate('/admin')
+      navigate('/admin/medicos')
       return
    }
    if( Rol == 'DOCTOR'){
